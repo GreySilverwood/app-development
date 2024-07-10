@@ -1,0 +1,100 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+/* ----- GRID SYSTEM ----- */
+img{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1200px;
+    margin: auto;
+    background-color: rgb(71, 71, 71);
+    box-shadow: 1px 1px 3px gray;
+}
+
+.img-container{
+    margin: 10px;
+    border: solid black 3px;
+}
+
+/* ----- MEDIA QUERY ----- */
+@media screen and (max-width: 1200px){
+    .grid-container{
+        background-color: pink;
+        width: 800px;
+        grid-template-columns: auto auto;
+    }
+}
+
+/* Breakpoint for Medium Screen Size up to 900px */
+@media screen and (max-width: 900px){
+    .grid-container{
+        background-color: lightsteelblue;
+        width: 80%;
+        grid-template-columns: auto;
+    }
+}
+
+/* ----- MAIN CONTAINER ----- */
+.header-container{
+    background-color: rgb(47, 7, 73);
+    color: white;
+    display: flex;
+}
+
+.header-container > div{
+    padding: 20px;
+}
+
+.header-container > div:nth-child(3){
+    margin-left: auto;
+}
+
+/* Intro Container */
+.intro-container{
+    display: grid;
+    height: 300px;
+    grid-template-columns: 20% 50% 30%;
+}
+
+.nav-menu{
+    background-color: pink;
+}
+
+.content{
+    background-color: hotpink;
+}
+
+.blog{
+    background-color: rgb(219, 0, 102);
+}
+
+.footer{
+    background-color: rgb(53, 0, 53);
+    color: white;
+    height: 200px;
+    display: grid;
+    grid-template: auto auto auto;
+}
+
+.footer > div{
+    border: solid pink 2px;
+}
+
+/* Breakpoint */
+@media screen and (max-width: 900px){
+    .nav-menu{
+        background-color: lightblue;
+    }
+    .content{
+        grid-column: span 2;
+    }
+
+    .blog{
+        grid-column: span 3;
+    }
+}
