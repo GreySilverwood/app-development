@@ -1,0 +1,192 @@
+*{box-sizing: border-box;}
+
+.mainbackground{
+    background-color: rgb(255, 255, 159);
+}
+
+.titleon{
+    text-align: center;
+    color: rgb(78, 12, 78);
+    margin-top: 100px;
+}
+
+.titleoff{
+    display: none;
+}
+
+.grid-container-off{
+    display: none;
+}
+
+/* SWITCH */
+.flickn{
+    display: none;
+    cursor: pointer;
+}
+
+.clickc, .clickn, .clickh, .flickh, .flickc{
+    cursor: pointer;
+}
+
+/* ===== COLLAPSIBLE NAV MENU ===== */
+.header-container, .navMenu{
+    background-color: rgb(47, 7, 73);
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+.header-container > div, .navMenu > div{
+    padding: 20px;
+}
+
+.header-container > div:nth-child(2){
+    margin-left: auto;
+}
+
+.headerNav{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.navMenu{
+    display: none;
+}
+
+.navMenu > div:nth-child(3){
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.collapsemenu{
+    background-color: rgba(73, 73, 73, 0.856);
+    padding: 20px;
+    display: none; /* hide until button is pressed */
+}
+
+.collapsemenu > div{
+    padding: 20px 0px;
+    color: white;
+}
+
+.collapsemenu > div:hover{
+    border-bottom: white 1px ridge;
+    cursor: pointer;
+    font-weight: bolder;
+    color: rgb(2, 225, 255);
+}
+
+.closeToOpen{
+    display: block;
+}
+
+@media screen and (max-width: 900px){
+    .header-container{
+        display: none;
+    }
+
+    .navMenu{
+        display: flex;
+    }
+}
+
+/* ----- GRID SYSTEM ----- */
+img{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.grid-container-color{
+    display: none;
+    grid-template-columns: auto auto auto;
+    width: 1200px;
+    margin: auto;
+    background-color: rgb(42, 0, 61);
+    box-shadow: 1px 1px 3px gray;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.grid-container-number{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1200px;
+    margin: auto;
+    background-color: rgb(42, 0, 61);
+    box-shadow: 1px 1px 3px gray;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.img-container{
+    margin: 10px;
+    border: solid black 3px;
+    height: 300px;
+}
+
+/* ----- MEDIA QUERY ----- */
+@media screen and (max-width: 1200px){
+    .grid-container-color{
+        background-color: rgb(102, 0, 116);
+        width: 800px;
+        display: none;
+        grid-template-columns: auto auto;
+    }
+
+    .grid-container-number{
+        background-color: rgb(102, 0, 116);
+        width: 800px;
+        grid-template-columns: auto auto;
+    }
+}
+
+/* Breakpoint for Medium Screen Size up to 900px */
+@media screen and (max-width: 900px){
+    .grid-container-color{
+        background-color: rgb(169, 2, 235);
+        width: 80%;
+        display: none;
+        grid-template-columns: auto;
+        padding-left: 15%;
+    }
+
+    .grid-container-number{
+        background-color: rgb(169, 2, 235);
+        width: 80%;
+        grid-template-columns: auto;
+        padding-left: 15%;
+    }
+}
+
+/* ===== MODEL WINDOW ===== */
+img{width: 100%;}
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .cardred, .cardorange, .cardyellow, .cardgreen, .cardblue, .cardindigo, .cardpurple, .cardwhite, .cardblack, .cardgray{
+    width: 400px;
+    cursor: pointer;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover, .card7:hover, .card8:hover, .card9:hover, .card10:hover, .cardred:hover, .cardorange:hover, .cardyellow:hover, .cardgreen:hover, .cardblue:hover, .cardindigo:hover, .cardpurple:hover, .cardwhite:hover, .cardblack:hover, .cardgray:hover{
+    border: 2px violet solid;
+    transform: scale(1.1);
+    border: 2px solid lightgray;
+}
+
+.modelwindow1, .modelwindow2, .modelwindow3, .modelwindow4, .modelwindow5, .modelwindow6, .modelwindow7, .modelwindow8, .modelwindow9, .modelwindow10, .modelwindowred, .modelwindowyellow, .modelwindoworange, .modelwindowgreen, .modelwindowblue, .modelwindowindigo, .modelwindowpurple, .modelwindowwhite, .modelwindowblack, .modelwindowgray{
+    background-color: rgba(73, 73, 73, 0.562);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: none; /* Hidden until pressed*/
+}
+
+.modelcontent{
+    width: 80%;
+    margin: 10% auto;
+    background-color: white;
+    display: flex;
+}
