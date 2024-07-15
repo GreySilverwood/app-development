@@ -185,10 +185,11 @@ img{width: 100%;}
 }
 
 .modelcontent{
-    width: 90%;
+    width: 70%;
     margin: 10% auto;
     background-color: white;
     display: flex;
+    height: 70%;
 }
 
 .imagecontent{
@@ -198,6 +199,7 @@ img{width: 100%;}
 .information{
     width: 20%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
 }
 
 .closemodelred, .closemodelyellow, .closemodelorange, .closemodelgreen, .closemodelblue, .closemodelindigio, .closemodelpurple, .closemodelwhite, .closemodelblack, .closemodelgray, .closemodel1, .closemodel2, .closemodel3, .closemodel4, .closemodel5, .closemodel6, .closemodel7, .closemodel8, .closemodel9, .closemodel10{
