@@ -185,8 +185,26 @@ img{width: 100%;}
 }
 
 .modelcontent{
-    width: 80%;
+    width: 90%;
     margin: 10% auto;
     background-color: white;
     display: flex;
+}
+
+.imagecontent{
+    width: 80%;
+}
+
+.information{
+    width: 20%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.closemodelred, .closemodelyellow, .closemodelorange, .closemodelgreen, .closemodelblue, .closemodelindigio, .closemodelpurple, .closemodelwhite, .closemodelblack, .closemodelgray, .closemodel1, .closemodel2, .closemodel3, .closemodel4, .closemodel5, .closemodel6, .closemodel7, .closemodel8, .closemodel9, .closemodel10{
+    text-align: right;
+    padding-right: 3px;
+    background-color: rgb(139, 59, 139);
+    cursor: pointer;
+    font-weight: strong;
+    color: white;
 }
