@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>User Login using NodeJS by Zaiqiang Li</h1>
+    <section class="login">
+        <form action="/login" method="post" class="myform">
+            <fieldset>
+                <legend>User Login</legend>
+                    <div class="formcontrol">
+                        <label for="username">Enter Username:</label>
+                        <input id="username" type="text" placeholder="Type username..." name="username" required />
+                    </div>
+                    
+                    <div class="formcontrol">
+                        <label for="password">Enter Password:</label>
+                        <input id="password" type="password" placeholder="Enter password..." name="password" required/>
+                    </div>
+
+                    <div class="formcontrol">
+                        <input type="submit" value="LOGIN" />
+                    </div>
+                
+            </fieldset>
+        </form>
+    </section>
+
+</body>
+</html>
